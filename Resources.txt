@@ -1,0 +1,195 @@
+Overview of Custom Storage Providers for ASP.NET Identity
+https://docs.microsoft.com/en-us/aspnet/identity/overview/extensibility/overview-of-custom-storage-providers-for-aspnet-identity
+
+google - custom mysql storage provider for asp.net core
+
+google - implementing jwt in asp.net core
+Implementing JWT Authentication in ASP.NET Core 5
+https://www.codemag.com/Article/2105051/Implementing-JWT-Authentication-in-ASP.NET-Core-5
+
+https://www.c-sharpcorner.com/article/how-to-implement-jwt-authentication-in-web-api-using-net-6-0-asp-net-core/
+
+https://www.c-sharpcorner.com/article/implement-jwt-in-net-core-api/
+
+
+
+
+
+
+Secure a Web API with Individual Accounts and Local Login in ASP.NET Web API 2.2
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/individual-accounts-in-web-api
+
+ASP.NET Web API Login method
+https://stackoverflow.com/questions/26503455/asp-net-web-api-login-method
+
+	Implementing a Custom MySQL ASP.NET Identity Storage Provider
+	https://docs.microsoft.com/en-us/aspnet/identity/overview/extensibility/implementing-a-custom-mysql-aspnet-identity-storage-provider
+
+		Token Based Authentication using ASP.NET Web API 2, Owin, and Identity
+		https://bitoftech.net/2014/06/01/token-based-authentication-asp-net-web-api-2-owin-asp-net-identity/
+
+Overview of Custom Storage Providers for ASP.NET Identity
+https://docs.microsoft.com/en-us/aspnet/identity/overview/extensibility/overview-of-custom-storage-providers-for-aspnet-identity
+
+Introduction to Identity on ASP.NET Core
+https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-6.0&tabs=visual-studio
+
+ASP.NET Core - Identity Overview
+https://www.tutorialspoint.com/asp.net_core/asp.net_core_identity_overview.htm#:~:text=ASP.NET%20Core%20-%20Identity%20Overview%201%20The%20Identity,identity%20providers%20and%20other%20features.%20More%20items...%20
+
+
+Introduction to ASP.Net Identity 2.0
+https://www.c-sharpcorner.com/UploadFile/16101a/introduction-to-Asp-Net-identity-2-0/
+
+
+
+**************************************************************************************************************
+
+ASP.NET Core 3.1 - Simple API for Authentication, Registration and User Management
+https://jasonwatmore.com/post/2019/10/14/aspnet-core-3-simple-api-for-authentication-registration-and-user-management
+
+ASP.NET Core 3.1 - Boilerplate API with Email Sign Up, Verification, Authentication & Forgot Password
+https://jasonwatmore.com/post/2020/07/06/aspnet-core-3-boilerplate-api-with-email-sign-up-verification-authentication-forgot-password
+
+SQLite in .NET Core with Entity Framework Core
+https://kontext.tech/column/dotnet_framework/275/sqlite-in-net-core-with-entity-framework-core
+
+Use Entity Framework in .NET 5 Azure Functions
+https://kontext.tech/column/cloud-azure/779/use-entityframework-in-net-5-azure-functions
+
+EntityFramework Core Database Migration in Azure DevOps Pipeline
+https://kontext.tech/column/cloud-azure/697/entityframework-core-database-migration-in-azure-devops-pipeline
+
+Azure App Service Logging Provider
+https://kontext.tech/diagram/919/azure-app-service-logging-provider
+
+How to using AutoMapper on ASP.NET Core 3.0 via Dependency Injection
+https://www.codementor.io/@zedotech/how-to-using-automapper-on-asp-net-core-3-0-via-dependencyinjection-zq497lzsq
+
+What is the difference between automapper.extensions.microsoft.dependencyinjection and automapper nuget packages?
+https://stackoverflow.com/questions/60427650/what-is-the-difference-between-automapper-extensions-microsoft-dependencyinjecti
+
+
+
+
+
+
+
+
+
+Entity Framework Core in ASP.NET Core 3.1 – Getting Started
+https://codewithmukesh.com/blog/entity-framework-core-in-aspnet-core/
+
+https://procodeguide.com/programming/entity-framework-core-in-asp-net-core/
+
+Using Dependency Injection with Entity Framework DbContext in .NET MVC apps
+https://davecallan.com/using-dependency-injection-with-entity-framework-dbcontext-in-net-mvc-apps/
+
+https://hovermind.com/aspnet-core/using-dbcontext-with-dependency-injection.html
+
+Does using the repository pattern with Entity Framework make sense?
+https://davecallan.com/using-repository-pattern-entity-framework-make-sense/
+
+
+
+Tutorial: Get started with EF Core in an ASP.NET MVC web app
+https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-6.0
+
+A better way of resolving EF Core interceptors with dependency injection
+https://purple.telstra.com/blog/a-better-way-of-resolving-ef-core-interceptors-with-dependency-injection
+
+
+
+
+
+ASP.Net Core 5 Web API - MVC Routing - YouTube
+https://www.youtube.com/watch?v=c3B0kzF0qOI
+https://www.tutorialsteacher.com/webapi/web-api-routing
+https://dotnettutorials.net/lesson/routing-in-asp-net-core-web-api/
+
+Create Asynchronous Action Method in Web API
+https://www.c-sharpcorner.com/UploadFile/2b481f/create-asynchronous-action-method-in-web-api/
+
+Asynchronous Controller of Web API 2 With Entity Framework 6: Put and Delete Method
+https://www.c-sharpcorner.com/UploadFile/dacca2/asynchronous-controller-of-web-api-2-with-entity-framework-6622/
+
+**********************  should I use async ***************************
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/october/async-programming-introduction-to-async-await-on-asp-net
+
+Effectively use async/await with ASP.NET Web API
+https://stackoverflow.com/questions/31185072/effectively-use-async-await-with-asp-net-web-api
+
+Note that it's easier to work from the "inside out" rather than the "outside in" like this. In other words, don't start with an asynchronous controller action and then force downstream methods to be asynchronous. Instead, identify the naturally asynchronous operations (calling external APIs, database queries, etc), and make those asynchronous at the lowest level first (Service.ProcessAsync). Then let the async trickle up, making your controller actions asynchronous as the last step.
+
+And under no circumstances should you use Task.Run in this scenario.
+
+*************************************************************
+
+
+**************** AutoMapper ********************
+
+Getting Started with AutoMapper in ASP.NET Core
+https://code-maze.com/automapper-net-core/
+
+What is AutoMapper and using it in ASP.NET Core
+https://www.pragimtech.com/blog/blazor/using-automapper-in-asp.net-core/
+
+*************************************************
+
+
+**************** ASP.NET Web API ********************
+ASP.NET Core 5.0 Web API
+https://www.c-sharpcorner.com/article/asp-net-core-5-0-web-api/
+
+Building an ASP.NET Web API with ASP.NET Core
+https://www.toptal.com/asp-dot-net/asp-net-web-api-tutorial
+
+
+*************************************************
+
+
+
+Using The CQRS Pattern In C#
+https://www.c-sharpcorner.com/article/using-the-cqrs-pattern-in-c-sharp/
+
+CQRS Design Pattern C#
+https://codewithshadman.com/cqrs-design-pattern-csharp/
+
+
+CQRS pattern
+https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs
+
+Apply simplified CQRS and DDD patterns in a microservice
+https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns
+
+
+
+
+
+
+
+**************** Swagger ********************
+
+How to use swagger in asp.net core web api
+https://www.youtube.com/watch?v=TlytBx3-k-k
+
+Test Your ASP.NET Core Web API With Swagger
+https://www.c-sharpcorner.com/article/test-your-asp-net-core-web-api-with-swagger/
+
+How To Implement Swagger In ASP.NET Core Web API
+https://www.c-sharpcorner.com/article/how-to-implement-swagger-in-asp-net-core-web-api/
+
+*************************************************
+
+
+
+
+Fluent Assertions
+https://fluentassertions.com/
+
+
+
+
+
+
+

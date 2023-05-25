@@ -1,0 +1,28 @@
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/3.1.0
+Install-Package Microsoft.EntityFrameworkCore -Version 3.1.0
+
+
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Proxies/3.1.0
+Install-Package Microsoft.EntityFrameworkCore.Proxies -Version 3.1.0
+
+
+https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql/3.1.0
+Install-Package Pomelo.EntityFrameworkCore.MySql -Version 3.1.0
+
+
+https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection/
+Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection -Version 8.1.1
+
+
+
+select * from Accounts
+where GUID = '{ae5f34fc-c750-4f64-9a1c-8d72443f925c}'
+
+-- insert into Accounts
+-- VALUES(1, '{ae5f34fc-c750-4f64-9a1c-8d72443f925c}', '2020-05-01 00:00:00', '9999-12-31 00:00:00', 'ssmith', 0, 'Aus Cric Board', '1', 
+-- 	'Ocean View Street', 'Brighton', 'VIC', '3000', 'Aus', 'Pankaj Banga', '0421 196 364', 'pbanga@acb.com.au', '123 456 798')
+
+
+// {A187E031-DA80-4B48-978F-84D71978B632}
+IMPLEMENT_OLECREATE(<<class>>, <<external_name>>, 
+0xa187e031, 0xda80, 0x4b48, 0x97, 0x8f, 0x84, 0xd7, 0x19, 0x78, 0xb6, 0x32);

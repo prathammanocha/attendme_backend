@@ -1,0 +1,14 @@
+setting environment variable 
+https://stackoverflow.com/questions/31049152/publish-to-iis-setting-environment-variable
+
+
+How to change hostingModel="OutOfProcess" while publishing to IISServer?
+https://stackoverflow.com/questions/60746875/how-to-change-hostingmodel-outofprocess-while-publishing-to-iisserver
+
+
+How to Deploy ASP.NET Core to IIS & How ASP.NET Core Hosting Works
+https://stackify.com/how-to-deploy-asp-net-core-to-iis/
+https://www.c-sharpcorner.com/article/deploy-asp-net-core-api-application-in-iis/
+
+
+Enable Cross-Origin Requests (CORS) in ASP.NET Core

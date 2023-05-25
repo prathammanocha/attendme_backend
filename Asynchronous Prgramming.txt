@@ -1,0 +1,130 @@
+Asynchronous Programming - EF Core
+https://docs.microsoft.com/en-us/ef/core/miscellaneous/async
+
+Client-side async LINQ operators
+The async LINQ operators discussed above can only be used on EF queries - you cannot use them with client-side LINQ to Objects query. 
+To perform client-side async LINQ operations outside of EF, use the System.Linq.Async package
+https://www.nuget.org/packages/System.Linq.Async
+PM> Install-Package System.Linq.Async -Version 5.1.0
+
+	Handling Concurrency Conflicts
+	https://docs.microsoft.com/en-us/ef/core/saving/concurrency
+
+	Tracking vs. No-Tracking Queries
+	https://docs.microsoft.com/en-us/ef/core/querying/tracking
+
+
+
+
+The new async / await pattern does not offer multithreading. It just offers cleaner code for handling operations that block your current thread.
+Writing multithreaded methods using async/await in .Net 4.5
+https://stackoverflow.com/questions/15274332/writing-multithreaded-methods-using-async-await-in-net-4-5
+
+Asynchronous programming - Article 12/18/2021
+https://docs.microsoft.com/en-us/dotnet/csharp/async
+
+Task-based asynchronous pattern
+https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap?redirectedfrom=MSDN
+
+Async/Await FAQ
+https://devblogs.microsoft.com/pfxteam/asyncawait-faq/
+
+Async in depth
+https://docs.microsoft.com/en-us/dotnet/standard/async-in-depth
+
+
+Async and Await
+https://blog.stephencleary.com/2012/02/async-and-await.html
+	
+	Eliding Async and Await
+	https://blog.stephencleary.com/2016/12/eliding-async-await.html
+
+	The Async CTP "Why Do the Keywords Work THAT Way" Unofficial FAQ
+	https://blog.stephencleary.com/2011/09/async-ctp-why-do-keywords-work-that-way.html
+
+	Task-based Asynchronous Pattern (TAP) document
+	https://www.microsoft.com/en-us/download/details.aspx?id=19957
+
+
+
+Async Programming : Introduction to Async/Await on ASP.NET
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/october/async-programming-introduction-to-async-await-on-asp-net
+
+Async/Await - Best Practices in Asynchronous Programming
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2013/march/async-await-best-practices-in-asynchronous-programming
+
+Effectively use async/await with ASP.NET Web API
+https://stackoverflow.com/questions/31185072/effectively-use-async-await-with-asp-net-web-api
+
+
+Create Asynchronous Action Method in Web API
+https://www.c-sharpcorner.com/UploadFile/2b481f/create-asynchronous-action-method-in-web-api/
+
+
+
+***** Building fully Asynchronous ASP.NET Core Web API
+https://mithunvp.com/fully-asynchronous-aspnet-core-2-web-api/
+
+
+
+
+
+Concurrency in C# Cookbook (2nd ed)
+https://stephencleary.com/book/
+
+
+Task Parallel Library (TPL) - for  multithreaded and parallel code
+https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/task-parallel-library-tpl
+
+Distinguish Asynchronous And Multi-Threading | C# 201 [8 of 8]
+https://www.youtube.com/watch?v=Kfs84d7jaT8
+
+
+
+==========================================================================================
+await operator (C# reference)
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/await
+
+
+public class AwaitOperator
+{
+    public static async Task Main()
+    {
+        Task<int> downloading = DownloadDocsMainPageAsync();
+        Console.WriteLine($"{nameof(Main)}: Launched downloading.");
+
+        int bytesLoaded = await downloading;
+        Console.WriteLine($"{nameof(Main)}: Downloaded {bytesLoaded} bytes.");
+    }
+
+    private static async Task<int> DownloadDocsMainPageAsync()
+    {
+        Console.WriteLine($"{nameof(DownloadDocsMainPageAsync)}: About to start downloading.");
+
+        var client = new HttpClient();
+        byte[] content = await client.GetByteArrayAsync("https://docs.microsoft.com/en-us/");
+
+        Console.WriteLine($"{nameof(DownloadDocsMainPageAsync)}: Finished downloading.");
+        return content.Length;
+    }
+}
+// Output similar to:
+// DownloadDocsMainPageAsync: About to start downloading.
+// Main: Launched downloading.
+// DownloadDocsMainPageAsync: Finished downloading.
+// Main: Downloaded 27700 bytes.
+===============================================================================================
+
+Using async/await or task in web api controller (.net core)
+https://stackoverflow.com/questions/41953102/using-async-await-or-task-in-web-api-controller-net-core
+
+Building fully Asynchronous ASP.NET Core Web API
+https://mithunvp.com/fully-asynchronous-aspnet-core-2-web-api/
+
+
+One of prominent best practices in async programming is Async all the way i.e. you shouldn’t mix synchronous 
+and asynchronous code without carefully considering the consequences. In particular, it’s usually a bad idea 
+to block on async code by calling Task.Wait or Task.Result.
+
+Async/Await - Best Practices in Asynchronous Programming
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2013/march/async-await-best-practices-in-asynchronous-programmings
