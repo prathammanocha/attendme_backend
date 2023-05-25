@@ -1,0 +1,5 @@
+A New Pattern for Exception Logging
+https://blog.stephencleary.com/2020/06/a-new-pattern-for-exception-logging.html
+
+All Blog Posts - Stephen Cleary
+https://blog.stephencleary.com/

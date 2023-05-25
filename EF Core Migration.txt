@@ -1,0 +1,138 @@
+Solution - 
+How and where to call Database.EnsureCreated and Database.Migrate?
+https://stackoverflow.com/questions/38238043/how-and-where-to-call-database-ensurecreated-and-database-migrate
+using (var scope = 
+  app.ApplicationServices.CreateScope())
+using (var context = scope.ServiceProvider.GetService<MyDbContext>())
+    context.Database.Migrate();
+
+How to seed in Entity Framework Core 3.0? - I don't think OnModelCreating() is the best place to seed your database
+https://stackoverflow.com/questions/60116577/how-to-seed-in-entity-framework-core-3-0
+=======================================================================================================================================
+
+
+https://entityframeworkcore.com
+
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding#seeding-owned-entities
+No Migrations? EnsureCreated Does the Job
+_dbContext.Database.EnsureCreated() won’t run migrations if the database already exists.
+EnsureCreated creates a database using the model described by the context class.
+
+Microsoft documentation says "Don't call EnsureCreated() before Migrate(). 
+EnsureCreated() bypasses Migrations to create the schema, which causes Migrate() to fail." Have you noticed that?
+
+
+In addition, the database that is created cannot later be updated using migrations. 
+If you are targeting a relational database and using migrations, you can use the DbContext.Database.Migrate() 
+method to ensure the database is created and all migrations are applied.
+https://stackoverflow.com/questions/38238043/how-and-where-to-call-database-ensurecreated-and-database-migrate
+
+
+********** Applying Seed Data To The Database
+https://www.learnentityframeworkcore.com/migrations/seeding
+
+Data Seeding
+https://docs.microsoft.com/en-us/ef/core/modeling/data-seeding
+
+
+
+
+Seeding data with Entity Framework Core using migrations
+https://dejanstojanovic.net/aspnet/2020/july/seeding-data-with-entity-framework-core-using-migrations/
+
+Seed Your Entity Framework Core Data at Startup with ASP.NET Core 2
+https://alexdunn.org/2018/12/31/seed-your-entity-framework-core-data-at-startup-with-asp-net-core-2/
+
+
+https://docs.microsoft.com/en-us/ef/core/modeling/data-seeding
+Custom initialization logic
+using (var context = new DataSeedingContext())
+{
+    context.Database.EnsureCreated();
+
+    var testBlog = context.Blogs.FirstOrDefault(b => b.Url == "http://test.com");
+    if (testBlog == null)
+    {
+        context.Blogs.Add(new Blog { Url = "http://test.com" });
+    }
+
+    context.SaveChanges();
+}
+
+***********************************************************************************
+
+1. Now that we have a DbContext and our tables, let’s create our migration!
+PM> Add-Migration InitialMigration
+    add-migration InitialCreate
+
+
+
+
+
+
+
+*************************************************************************************
+
+
+
+
+
+
+************************    Migrations and Seed Data with Entity Framework Core
+https://code-maze.com/migrations-and-seed-data-efcore/
+
+***** USE THIS ******
+PM> Add-Migration DBInit
+
+PM> Update-Database
+
+PM> Remove-Migration
+
+
+======= Seed data =========
+Now we can create a new migration:
+
+PM> Add-Migration SeedInitialData
+
+And apply it:
+
+PM> Update-Database
+
+
+
+EF Core 2 Owned Entities and Temporary Work-Arounds
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/april/data-points-ef-core-2-owned-entities-and-temporary-work-arounds
+
+
+******************************************************************************************************
+******* Seeding owned entities
+******* Deep Dive into EF Core HasData Seeding - Seeding Owned Entities
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding
+
+Seed entity with owned property
+https://entityframeworkcore.com/knowledge-base/50862525/seed-entity-with-owned-property
+
+    Document how to seed owned types #710
+    https://github.com/dotnet/EntityFramework.Docs/issues/710
+
+Seed entity with owned property
+https://stackoverflow.com/questions/50862525/seed-entity-with-owned-property
+
+Problem seeding data that contains owned type #12004
+https://github.com/dotnet/efcore/issues/12004
+
+Seeding data: The seed entity for entity type 'X' cannot be added because there was no value provided for the required property 'Id'. #11776
+https://github.com/dotnet/efcore/issues/11776
+
+
+
+
+
+
+*************************************************************************************************
+    
+
+
+
+
+

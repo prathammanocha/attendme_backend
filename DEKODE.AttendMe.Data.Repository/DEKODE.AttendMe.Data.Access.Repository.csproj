@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DEKODE.AttendMe.Data.Transfer.Contract\DEKODE.AttendMe.Data.Transfer.Contract.csproj" />
+    <ProjectReference Include="..\DEKODE.AttendMe.Data\DEKODE.AttendMe.Data.Model.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+Creating an Entity Framework Data Model for an ASP.NET MVC Application (1 of 10)
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
+
+Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application (9 of 10)
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+
+
+Handling Concurrency with the Entity Framework in an ASP.NET MVC Application (7 of 10)
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application

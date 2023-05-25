@@ -1,0 +1,23 @@
+*** Problem Details - The right way to specify errors in Web API responses
+https://kumarashwinhubert.com/problem-details-the-right-way-to-specify-errors-in-web-api-responses
+
+*** Using the ProblemDetails Class in ASP.NET Core Web API
+https://code-maze.com/using-the-problemdetails-class-in-asp-net-core-web-api/
+
+Global Error Handling in ASP.NET Core Web API
+https://code-maze.com/global-error-handling-aspnetcore/
+
+Handle errors in ASP.NET Core web APIs
+https://docs.microsoft.com/en-us/aspnet/core/web-api/handle-errors?view=aspnetcore-6.0
+
+
+**** Handling Web API Exceptions with ProblemDetails middleware
+https://andrewlock.net/handling-web-api-exceptions-with-problemdetails-middleware/
+
+
+
+
+
+
+
+
