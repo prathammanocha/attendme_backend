@@ -789,39 +789,39 @@ namespace DEKODE.AttendMe.Api.Migrations
                 columns: new[] { "OtherReason", "LogDateTime", "LogType", "StudentId", "StudentLogReasonId", "PatronId", "Guid", "EffectiveStartDate", "EffectiveEndDate", "AuditUser", "IsDeleted" },
                 values: new object[,]
                 {
-        { "Late arrival", new DateTime(2023, 4, 1, 8, 10, 0), 1, 1, 1, 1, Guid.NewGuid(), new DateTime(2023, 4, 1), new DateTime(2023, 4, 30), "sys_admin", false },
-        { "Early departure", new DateTime(2023, 4, 1, 15, 45, 0), 2, 1, 2, 1, Guid.NewGuid(), new DateTime(2023, 4, 1), new DateTime(2023, 4, 30), "sys_admin", false },
-        { "Absent", new DateTime(2023, 4, 3, 0, 0, 0), 3, 1, 3, 1, Guid.NewGuid(), new DateTime(2023, 4, 3), new DateTime(2023, 4, 3), "sys_admin", false },
+                { "Late arrival", new DateTime(2023, 4, 1, 8, 10, 0), 1, 1, 1, 1, Guid.NewGuid(), new DateTime(2023, 4, 1), new DateTime(2023, 4, 30), "sys_admin", false },
+                { "Early departure", new DateTime(2023, 4, 1, 15, 45, 0), 2, 1, 2, 1, Guid.NewGuid(), new DateTime(2023, 4, 1), new DateTime(2023, 4, 30), "sys_admin", false },
+                { "Absent", new DateTime(2023, 4, 3, 0, 0, 0), 3, 1, 3, 1, Guid.NewGuid(), new DateTime(2023, 4, 3), new DateTime(2023, 4, 3), "sys_admin", false },
                 });
 
 
-            migrationBuilder.InsertData(
-                table: "Relatives",
-                columns: new[]
-                {
-        "FirstName", "LastName", "Company", "Phone", "Email", "Workingwc",
-        "ChildSafety", "VDS", "PatronTypeId", "StudentId", "OrganisationId",
-        "Guid", "AuditUser", "IsDeleted"
-                },
-                values: new object[,]
-                {
-        { "John", "Doe", "ABC Company", "1234567890", "john.doe@example.com", "Working", true, true, 1, 1, 1, Guid.NewGuid(), "Admin", false },
-        { "Jane", "Smith", "XYZ Company", "9876543210", "jane.smith@example.com", "Working", true, false, 2, 2, 1, Guid.NewGuid(), "Admin", false },
-                });
+            //    migrationBuilder.InsertData(
+            //        table: "Relatives",
+            //        columns: new[]
+            //        {
+            //"FirstName", "LastName", "Company", "Phone", "Email", "Workingwc",
+            //"ChildSafety", "VDS", "PatronTypeId", "StudentId", "OrganisationId",
+            //"Guid", "AuditUser", "IsDeleted"
+            //        },
+            //        values: new object[,]
+            //        {
+            //{ "John", "Doe", "ABC Company", "1234567890", "john.doe@example.com", "Working", true, true, 1, 1, 1, Guid.NewGuid(), "Admin", false },
+            //{ "Jane", "Smith", "XYZ Company", "9876543210", "jane.smith@example.com", "Working", true, false, 2, 2, 1, Guid.NewGuid(), "Admin", false },
+            //        });
 
-            migrationBuilder.InsertData(
-                table: "Parents",
-                columns: new[]
-                {
-        "FirstName", "LastName", "Company", "Phone", "Email", "Workingwc",
-        "ChildSafety", "VDS", "StudentId", "OrganisationId",
-        "Guid", "AuditUser", "IsDeleted"
-                },
-                values: new object[,]
-                {
-        { "John", "Doe", "ABC Company", "1234567890", "john.doe@example.com", "Working", true, true, 1, 1, Guid.NewGuid(), "Admin", false },
-        { "Jane", "Smith", "XYZ Company", "9876543210", "jane.smith@example.com", "Working", true, false, 2, 1, Guid.NewGuid(), "Admin", false },
-                });
+            //    migrationBuilder.InsertData(
+            //        table: "Parents",
+            //        columns: new[]
+            //        {
+            //"FirstName", "LastName", "Company", "Phone", "Email", "Workingwc",
+            //"ChildSafety", "VDS", "StudentId", "OrganisationId",
+            //"Guid", "AuditUser", "IsDeleted"
+            //        },
+            //        values: new object[,]
+            //        {
+            //{ "John", "Doe", "ABC Company", "1234567890", "john.doe@example.com", "Working", true, true, 1, 1, Guid.NewGuid(), "Admin", false },
+            //{ "Jane", "Smith", "XYZ Company", "9876543210", "jane.smith@example.com", "Working", true, false, 2, 1, Guid.NewGuid(), "Admin", false },
+            //        });
 
 
 
